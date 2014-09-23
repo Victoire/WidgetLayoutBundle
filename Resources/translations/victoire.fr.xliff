@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2013-11-27T18:15:06Z" source-language="en" target-language="fr" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit resname="widget.layout.new.action.label">
+        <source>widget.layout.new.action.label</source>
+        <target>Agencement</target>
+      </trans-unit>
+      <trans-unit resname="modal.form.widget.type.layout.label">
+        <source>modal.form.widget.type.layout.label</source>
+        <target>Agencement</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.layout.label">
+        <source>widget_layout.form.layout.label</source>
+        <target>Architecture du contenu</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.layout.choice.once.label">
+        <source>widget_layout.form.layout.choice.once.label</source>
+        <target>100%</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.layout.choice.third.label">
+        <source>widget_layout.form.layout.choice.third.label</source>
+        <target>1/3 - 2/3</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.layout.choice.third2.label">
+        <source>widget_layout.form.layout.choice.third2.label</source>
+        <target>2/3 - 1/3</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.layout.choice.half.label">
+        <source>widget_layout.form.layout.choice.half.label</source>
+        <target>50% - 50%</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.layout.choice.halfquarterquarter.label">
+        <source>widget_layout.form.layout.choice.halfquarterquarter.label</source>
+        <target>50% - 25% - 25%</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.layout.choice.quarterhalfquarter.label">
+        <source>widget_layout.form.layout.choice.quarterhalfquarter.label</source>
+        <target>25% - 50% - 25%</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.layout.choice.quarterquarterhalf.label">
+        <source>widget_layout.form.layout.choice.quarterquarterhalf.label</source>
+        <target>25% - 25% - 50%</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerTag.label">
+        <source>widget_layout.form.containerTag.label</source>
+        <target>Balise</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerClass.label">
+        <source>widget_layout.form.containerClass.label</source>
+        <target>Classes</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerWidth.label">
+        <source>widget_layout.form.containerWidth.label</source>
+        <target>Taille</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerMargin.label">
+        <source>widget_layout.form.containerMargin.label</source>
+        <target>Marge extérieure (margin)</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerPadding.label">
+        <source>widget_layout.form.containerPadding.label</source>
+        <target>Marge intérieure</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerTag.help_block">
+        <source>widget_layout.form.containerTag.help_block</source>
+        <target><![CDATA[Plus d'informations sur ce choix <a href="http://www.w3.org/wiki/HTML_structural_elements" target="_blank">ici</a>]]></target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerClass.help_block">
+        <source>widget_layout.form.containerClass.help_block</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerWidth.help_block">
+        <source>widget_layout.form.containerWidth.help_block</source>
+        <target>Indiquez la taille suivie de l'unité (px, %...)</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerMargin.help_block">
+        <source>widget_layout.form.containerMargin.help_block</source>
+        <target><![CDATA[Indiquez la marge suivie de l'unité (px, %...). Vous pouvez utiliser 0px auto pour centrer le conteneur - Propriété CSS <strong>margin</strong>]]></target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerPadding.help_block">
+        <source>widget_layout.form.containerPadding.help_block</source>
+        <target><![CDATA[Indiquez la taille suivie de l'unité (px, %...) - Propriété CSS <strong>padding</strong>]]></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

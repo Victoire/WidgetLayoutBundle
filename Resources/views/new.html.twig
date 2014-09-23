@@ -1,0 +1,27 @@
+{% extends 'VictoireCoreBundle:Widget:new.html.twig' %}
+{% block form_static %}
+    <div id="picker-{{ form.mode.vars.data }}" class="vic-tab-pane vic-active">
+        {{ form_start(form) }}
+            <div class="vic-row">
+                <div class="vic-col-md-6">
+                    {{ form_row(form.layout) }}
+                </div>
+            </div>
+            <div class="vic-row">
+                <div class="vic-col-md-12">
+                    <h3 class="vic-h3">Conteneur</h3>
+                </div>
+                <div class="vic-col-md-6">
+                    {{ form_row(form.containerTag) }}
+                    {{ form_row(form.containerClass) }}
+                    {{ form_row(form.containerWidth) }}
+                </div>
+                <div class="vic-col-md-6">
+                    {{ form_row(form.containerMargin) }}
+                    {{ form_row(form.containerPadding) }}
+                </div>
+            </div>
+            {{ form_rest(form) }}
+        {{ form_end(form) }}
+    </div>
+{% endblock form_static %}

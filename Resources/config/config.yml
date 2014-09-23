@@ -1,0 +1,11 @@
+victoire_core:
+    widgets:
+        Layout:
+            class: "Victoire\\Widget\\LayoutBundle\\Entity\\WidgetLayout"
+            name: Layout
+            
+jms_translation:
+    configs:
+        victoire_layout_bundle:
+            dirs: ["@VictoireLayoutBundle"]
+            output_dir: "@VictoireLayoutBundle/Resources/translations"

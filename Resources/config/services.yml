@@ -1,0 +1,14 @@
+services:
+    victoire_core.widget_layout_content_resolver:
+        parent: victoire_widget.base_widget_content_resolver
+        tags:
+            - { name: victoire_widget.widget_content_resolver, alias: Layout }
+    #alias to the entity
+    victoire.widget.layout:
+        class: Victoire\Widget\LayoutBundle\Entity\WidgetLayout
+
+    #alias to the form
+    victoire.widget.form.layout:
+        class: Victoire\Widget\LayoutBundle\Form\WidgetLayoutType
+        tags:
+            - { name: form.type , alias: victoire_widget_form_layout }

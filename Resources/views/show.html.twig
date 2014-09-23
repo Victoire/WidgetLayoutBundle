@@ -1,0 +1,15 @@
+{% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
+
+{% block content %}
+    {% set width = containerWidth ? "width: " ~ containerWidth ~ ";" %}
+    {% set margin = containerMargin ? "margin: " ~ containerMargin ~ ";" %}
+    {% set padding = containerPadding ? "padding: " ~ containerPadding ~ ";" %}
+    {% set style = width ~ margin ~ padding %}
+
+    <{{ containerTag }} class="vic-layout vic-layout-{{ layout }}{% if containerClass %} {{ containerClass }}{% endif %}"{% if style != "" %}style="{{ style }}"{% endif %}>
+        {% set availableWidgets = ['Image', 'Title', 'Redactor', 'Button'] %}
+        <div class="row">
+            {% include 'VictoireWidgetLayoutBundle:Layout:_' ~ layout ~ '.html.twig' %}
+        </div>
+    </{{ containerTag }}>
+{% endblock content %}

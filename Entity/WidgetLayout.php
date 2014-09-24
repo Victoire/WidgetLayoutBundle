@@ -39,28 +39,28 @@ class WidgetLayout extends Widget
     /**
      * @var string
      *
-     * @ORM\Column(name="container_class", type="string", length=255)
+     * @ORM\Column(name="container_class", type="string", length=255, nullable=true)
      */
     protected $containerClass;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="container_width", type="string", length=255)
+     * @ORM\Column(name="container_width", type="string", length=255, nullable=true)
      */
     protected $containerWidth;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="container_margin", type="string", length=255)
+     * @ORM\Column(name="container_margin", type="string", length=255, nullable=true)
      */
     protected $containerMargin;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="container_padding", type="string", length=255)
+     * @ORM\Column(name="container_padding", type="string", length=255, nullable=true)
      */
     protected $containerPadding;
 

@@ -67,7 +67,7 @@ class WidgetLayout extends Widget
     /**
      * @var string
      *
-     * @ORM\Column(name="container_background", type="string", length=255)
+     * @ORM\Column(name="container_background", type="string", length=255, nullable=true)
      */
     protected $containerBackground;
 

@@ -66,6 +66,10 @@
         <source>widget_layout.form.containerPadding.label</source>
         <target>Marge intérieure</target>
       </trans-unit>
+      <trans-unit resname="widget_layout.form.containerBackground.label">
+        <source>widget_layout.form.containerBackground.label</source>
+        <target>Arrière plan</target>
+      </trans-unit>
       <trans-unit resname="widget_layout.form.containerTag.help_block">
         <source>widget_layout.form.containerTag.help_block</source>
         <target><![CDATA[Plus d'informations sur ce choix <a href="http://www.w3.org/wiki/HTML_structural_elements" target="_blank">ici</a>]]></target>
@@ -85,6 +89,10 @@
       <trans-unit resname="widget_layout.form.containerPadding.help_block">
         <source>widget_layout.form.containerPadding.help_block</source>
         <target><![CDATA[Indiquez la taille suivie de l'unité (px, %...) - Propriété CSS <strong>padding</strong>]]></target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerBackground.help_block">
+        <source>widget_layout.form.containerBackground.help_block</source>
+        <target><![CDATA[par ex. : #123ABC ou url('http://website.com/image.jpg') - Propriété CSS <strong>background</strong>]]></target>
       </trans-unit>
     </body>
   </file>

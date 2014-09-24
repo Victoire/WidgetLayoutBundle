@@ -65,6 +65,13 @@ class WidgetLayout extends Widget
     protected $containerPadding;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="container_background", type="string", length=255)
+     */
+    protected $containerBackground;
+
+    /**
      * To String function
      * Used in render choices type (Especially in VictoireWidgetRenderBundle)
      * //TODO Check the generated value and make it more consistent
@@ -78,8 +85,9 @@ class WidgetLayout extends Widget
 
     /**
      * Set layout
-     *
      * @param string $layout
+     *
+     * @return $this
      */
     public function setLayout($layout)
     {
@@ -100,8 +108,9 @@ class WidgetLayout extends Widget
 
     /**
      * Set containerClass
-     *
      * @param string $containerClass
+     *
+     * @return $this
      */
     public function setContainerClass($containerClass)
     {
@@ -122,8 +131,9 @@ class WidgetLayout extends Widget
 
     /**
      * Set containerTag
-     *
      * @param string $containerTag
+     *
+     * @return $this
      */
     public function setContainerTag($containerTag)
     {
@@ -144,8 +154,9 @@ class WidgetLayout extends Widget
 
     /**
      * Set containerWidth
-     *
      * @param string $containerWidth
+     *
+     * @return $this
      */
     public function setContainerWidth($containerWidth)
     {
@@ -166,8 +177,9 @@ class WidgetLayout extends Widget
 
     /**
      * Set containerMargin
-     *
      * @param string $containerMargin
+     *
+     * @return $this
      */
     public function setContainerMargin($containerMargin)
     {
@@ -188,8 +200,9 @@ class WidgetLayout extends Widget
 
     /**
      * Set containerPadding
-     *
      * @param string $containerPadding
+     *
+     * @return WidgetLayout
      */
     public function setContainerPadding($containerPadding)
     {
@@ -206,6 +219,29 @@ class WidgetLayout extends Widget
     public function getContainerPadding()
     {
         return $this->containerPadding;
+    }
+
+    /**
+     * Get containerBackground
+     *
+     * @return string
+     */
+    public function getContainerBackground()
+    {
+        return $this->containerBackground;
+    }
+
+    /**
+     * Set containerBackground
+     * @param string $containerBackground
+     *
+     * @return $this
+     */
+    public function setContainerBackground($containerBackground)
+    {
+        $this->containerBackground = $containerBackground;
+
+        return $this;
     }
 
 }

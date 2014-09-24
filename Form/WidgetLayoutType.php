@@ -56,6 +56,11 @@ class WidgetLayoutType extends WidgetType
             'vic_help_block' => 'widget_layout.form.containerPadding.help_block',
             'required' => false
         ));
+        $builder->add('containerBackground', null, array(
+            'label' => 'widget_layout.form.containerBackground.label',
+            'vic_help_block' => 'widget_layout.form.containerBackground.help_block',
+            'required' => false
+        ));
 
         parent::buildForm($builder, $options);
 

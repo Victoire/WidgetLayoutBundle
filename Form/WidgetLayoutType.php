@@ -24,8 +24,9 @@ class WidgetLayoutType extends WidgetType
             'choices' => array(
                 'once'                => 'widget_layout.form.layout.choice.once.label',
                 'third'               => 'widget_layout.form.layout.choice.third.label',
-                'third2'              => 'widget_layout.form.layout.choice.third2.label',
-                'halfhalf'            => 'widget_layout.form.layout.choice.half.label',
+                'third12'             => 'widget_layout.form.layout.choice.third12.label',
+                'third21'             => 'widget_layout.form.layout.choice.third21.label',
+                'half'                => 'widget_layout.form.layout.choice.half.label',
                 'halfquarterquarter'  => 'widget_layout.form.layout.choice.halfquarterquarter.label',
                 'quarterhalfquarter'  => 'widget_layout.form.layout.choice.quarterhalfquarter.label',
                 'quarterquarterhalf'  => 'widget_layout.form.layout.choice.quarterquarterhalf.label',

@@ -8,7 +8,7 @@
     {% set style = width ~ margin ~ padding ~ background %}
 
     <{{ containerTag }} class="vic-layout vic-layout-{{ layout }}{% if containerClass %} {{ containerClass }}{% endif %}"{% if style != "" %}style="{{ style }}"{% endif %}>
-        {% set availableWidgets = ['Image', 'Title', 'Redactor', 'Button', 'Tab'] %}
+        {% set availableWidgets = [] %}
         <div class="row">
             {% include 'VictoireWidgetLayoutBundle:Layout:_' ~ layout ~ '.html.twig' %}
         </div>

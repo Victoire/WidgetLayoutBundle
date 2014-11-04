@@ -67,6 +67,62 @@ class WidgetLayout extends Widget
     /**
      * @var string
      *
+     * @ORM\Column(name="container_margin_xs", type="string", length=255, nullable=true)
+     */
+    protected $containerMarginXS;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="container_padding_xs", type="string", length=255, nullable=true)
+     */
+    protected $containerPaddingXS;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="container_margin_sm", type="string", length=255, nullable=true)
+     */
+    protected $containerMarginSM;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="container_padding_sm", type="string", length=255, nullable=true)
+     */
+    protected $containerPaddingSM;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="container_margin_md", type="string", length=255, nullable=true)
+     */
+    protected $containerMarginMD;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="container_padding_md", type="string", length=255, nullable=true)
+     */
+    protected $containerPaddingMD;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="container_margin_lg", type="string", length=255, nullable=true)
+     */
+    protected $containerMarginLG;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="container_padding_lg", type="string", length=255, nullable=true)
+     */
+    protected $containerPaddingLG;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="container_background", type="string", length=255, nullable=true)
      */
     protected $containerBackground;
@@ -208,6 +264,182 @@ class WidgetLayout extends Widget
     {
         $this->containerPadding = $containerPadding;
 
+        return $this;
+    }
+
+    /**
+     * Get containerMarginXS
+     *
+     * @return string
+     */
+    public function getContainerMarginXS()
+    {
+        return $this->containerMarginXS;
+    }
+    
+    /**
+     * Set containerMarginXS
+     *
+     * @param string $containerMarginXS
+     * @return $this
+     */
+    public function setContainerMarginXS($containerMarginXS)
+    {
+        $this->containerMarginXS = $containerMarginXS;
+        return $this;
+    }
+
+    /**
+     * Get containerPaddingXS
+     *
+     * @return string
+     */
+    public function getContainerPaddingXS()
+    {
+        return $this->containerPaddingXS;
+    }
+    
+    /**
+     * Set containerPaddingXS
+     *
+     * @param string $containerPaddingXS
+     * @return $this
+     */
+    public function setContainerPaddingXS($containerPaddingXS)
+    {
+        $this->containerPaddingXS = $containerPaddingXS;
+        return $this;
+    }
+
+    /**
+     * Get containerMarginSM
+     *
+     * @return string
+     */
+    public function getContainerMarginSM()
+    {
+        return $this->containerMarginSM;
+    }
+    
+    /**
+     * Set containerMarginSM
+     *
+     * @param string $containerMarginSM
+     * @return $this
+     */
+    public function setContainerMarginSM($containerMarginSM)
+    {
+        $this->containerMarginSM = $containerMarginSM;
+        return $this;
+    }
+
+    /**
+     * Get containerPaddingSM
+     *
+     * @return string
+     */
+    public function getContainerPaddingSM()
+    {
+        return $this->containerPaddingSM;
+    }
+    
+    /**
+     * Set containerPaddingSM
+     *
+     * @param string $containerPaddingSM
+     * @return $this
+     */
+    public function setContainerPaddingSM($containerPaddingSM)
+    {
+        $this->containerPaddingSM = $containerPaddingSM;
+        return $this;
+    }
+
+    /**
+     * Get containerMarginMD
+     *
+     * @return string
+     */
+    public function getContainerMarginMD()
+    {
+        return $this->containerMarginMD;
+    }
+    
+    /**
+     * Set containerMarginMD
+     *
+     * @param string $containerMarginMD
+     * @return $this
+     */
+    public function setContainerMarginMD($containerMarginMD)
+    {
+        $this->containerMarginMD = $containerMarginMD;
+        return $this;
+    }
+
+    /**
+     * Get containerPaddingMD
+     *
+     * @return string
+     */
+    public function getContainerPaddingMD()
+    {
+        return $this->containerPaddingMD;
+    }
+    
+    /**
+     * Set containerPaddingMD
+     *
+     * @param string $containerPaddingMD
+     * @return $this
+     */
+    public function setContainerPaddingMD($containerPaddingMD)
+    {
+        $this->containerPaddingMD = $containerPaddingMD;
+        return $this;
+    }
+
+    /**
+     * Get containerMarginLG
+     *
+     * @return string
+     */
+    public function getContainerMarginLG()
+    {
+        return $this->containerMarginLG;
+    }
+    
+    /**
+     * Set containerMarginLG
+     *
+     * @param string $containerMarginLG
+     * @return $this
+     */
+    public function setContainerMarginLG($containerMarginLG)
+    {
+        $this->containerMarginLG = $containerMarginLG;
+        return $this;
+    }
+
+    /**
+     * Get containerPaddingLG
+     *
+     * @return string
+     */
+    public function getContainerPaddingLG()
+    {
+        return $this->containerPaddingLG;
+    }
+    
+    /**
+     * Set containerPaddingLG
+     *
+     * @param string $containerPaddingLG
+     * @return $this
+     */
+    public function setContainerPaddingLG($containerPaddingLG)
+    {
+        $this->containerPaddingLG = $containerPaddingLG;
         return $this;
     }
 

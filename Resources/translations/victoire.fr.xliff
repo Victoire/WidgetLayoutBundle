@@ -64,12 +64,61 @@
       </trans-unit>
       <trans-unit resname="widget_layout.form.containerMargin.label">
         <source>widget_layout.form.containerMargin.label</source>
-        <target>Marge extérieure (margin)</target>
+        <target>Marge extérieure</target>
       </trans-unit>
       <trans-unit resname="widget_layout.form.containerPadding.label">
         <source>widget_layout.form.containerPadding.label</source>
         <target>Marge intérieure</target>
       </trans-unit>
+      <trans-unit resname="widget_layout.form.containerMarginXS.label">
+        <source>widget_layout.form.containerMarginXS.label</source>
+        <target>Marge extérieure</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerPaddingXS.label">
+        <source>widget_layout.form.containerPaddingXS.label</source>
+        <target>Marge intérieure</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerMarginSM.label">
+        <source>widget_layout.form.containerMarginSM.label</source>
+        <target>Marge extérieure</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerPaddingSM.label">
+        <source>widget_layout.form.containerPaddingSM.label</source>
+        <target>Marge intérieure</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerMarginMD.label">
+        <source>widget_layout.form.containerMarginMD.label</source>
+        <target>Marge extérieure</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerPaddingMD.label">
+        <source>widget_layout.form.containerPaddingMD.label</source>
+        <target>Marge intérieure</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerMarginLG.label">
+        <source>widget_layout.form.containerMarginLG.label</source>
+        <target>Marge extérieure</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerPaddingLG.label">
+        <source>widget_layout.form.containerPaddingLG.label</source>
+        <target>Marge intérieure</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.tab.containerMargin.XS.label">
+        <source>widget_layout.tab.containerMargin.XS.label</source>
+        <target>Mobile</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.tab.containerMargin.SM.label">
+        <source>widget_layout.tab.containerMargin.SM.label</source>
+        <target>Tablette</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.tab.containerMargin.MD.label">
+        <source>widget_layout.tab.containerMargin.MD.label</source>
+        <target>Ordinateur</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.tab.containerMargin.LG.label">
+        <source>widget_layout.tab.containerMargin.LG.label</source>
+        <target>Grand écran</target>
+      </trans-unit>
+
       <trans-unit resname="widget_layout.form.containerBackground.label">
         <source>widget_layout.form.containerBackground.label</source>
         <target>Arrière plan</target>
@@ -92,6 +141,38 @@
       </trans-unit>
       <trans-unit resname="widget_layout.form.containerPadding.help_block">
         <source>widget_layout.form.containerPadding.help_block</source>
+        <target><![CDATA[Indiquez la taille suivie de l'unité (px, %...) - Propriété CSS <strong>padding</strong>]]></target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerMarginXS.help_block">
+        <source>widget_layout.form.containerMarginXS.help_block</source>
+        <target><![CDATA[Indiquez la marge suivie de l'unité (px, %...). Vous pouvez utiliser 0px auto pour centrer le conteneur - Propriété CSS <strong>margin</strong>]]></target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerPaddingXS.help_block">
+        <source>widget_layout.form.containerPaddingXS.help_block</source>
+        <target><![CDATA[Indiquez la taille suivie de l'unité (px, %...) - Propriété CSS <strong>padding</strong>]]></target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerMarginSM.help_block">
+        <source>widget_layout.form.containerMarginSM.help_block</source>
+        <target><![CDATA[Indiquez la marge suivie de l'unité (px, %...). Vous pouvez utiliser 0px auto pour centrer le conteneur - Propriété CSS <strong>margin</strong>]]></target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerPaddingSM.help_block">
+        <source>widget_layout.form.containerPaddingSM.help_block</source>
+        <target><![CDATA[Indiquez la taille suivie de l'unité (px, %...) - Propriété CSS <strong>padding</strong>]]></target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerMarginMD.help_block">
+        <source>widget_layout.form.containerMarginMD.help_block</source>
+        <target><![CDATA[Indiquez la marge suivie de l'unité (px, %...). Vous pouvez utiliser 0px auto pour centrer le conteneur - Propriété CSS <strong>margin</strong>]]></target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerPaddingMD.help_block">
+        <source>widget_layout.form.containerPaddingMD.help_block</source>
+        <target><![CDATA[Indiquez la taille suivie de l'unité (px, %...) - Propriété CSS <strong>padding</strong>]]></target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerMarginLG.help_block">
+        <source>widget_layout.form.containerMarginLG.help_block</source>
+        <target><![CDATA[Indiquez la marge suivie de l'unité (px, %...). Vous pouvez utiliser 0px auto pour centrer le conteneur - Propriété CSS <strong>margin</strong>]]></target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerPaddingLG.help_block">
+        <source>widget_layout.form.containerPaddingLG.help_block</source>
         <target><![CDATA[Indiquez la taille suivie de l'unité (px, %...) - Propriété CSS <strong>padding</strong>]]></target>
       </trans-unit>
       <trans-unit resname="widget_layout.form.containerBackground.help_block">

@@ -8,7 +8,7 @@
 
 
     <style>
-        #widget-{{ widget.id }} .vic-layout {
+        #widget-{{ widget.id }} > .vic-layout {
             {{ width }}
             {{ margin }}
             {{ padding }}
@@ -43,7 +43,7 @@
 
 {% if attribute(widget, 'containerMargin' ~ sizeCode|upper) or attribute(widget, 'containerPadding' ~ sizeCode|upper) %}
 @media screen {{ attr }} {
-    #widget-{{ widget.id }} .vic-layout {
+    #widget-{{ widget.id }} > .vic-layout {
         {% if attribute(widget, 'containerMargin' ~ sizeCode|upper) %}margin: {{ attribute(widget, 'containerMargin' ~ sizeCode|upper)}};{% endif %}
         {% if attribute(widget, 'containerPadding' ~ sizeCode|upper) %}padding: {{ attribute(widget, 'containerPadding' ~ sizeCode|upper)}};{% endif %}
     }

@@ -50,6 +50,14 @@
         <source>widget_layout.form.layout.choice.quarterquarterhalf.label</source>
         <target>25% - 25% - 50%</target>
       </trans-unit>
+      <trans-unit resname="widget_layout.form.layout.choice.quarters.label">
+        <source>widget_layout.form.layout.choice.quarters.label</source>
+        <target>4 * 25%</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.layout.choice.fifth.label">
+        <source>widget_layout.form.layout.choice.fifth.label</source>
+        <target>5 * 20%</target>
+      </trans-unit>
       <trans-unit resname="widget_layout.form.containerTag.label">
         <source>widget_layout.form.containerTag.label</source>
         <target>Balise</target>

@@ -30,7 +30,8 @@ class WidgetLayoutType extends WidgetType
                 'halfquarterquarter'  => 'widget_layout.form.layout.choice.halfquarterquarter.label',
                 'quarterhalfquarter'  => 'widget_layout.form.layout.choice.quarterhalfquarter.label',
                 'quarterquarterhalf'  => 'widget_layout.form.layout.choice.quarterquarterhalf.label',
-                'quarterquarterhalf'  => 'widget_layout.form.layout.choice.quarterquarterhalf.label'
+                'quarters'            => 'widget_layout.form.layout.choice.quarters.label',
+                'fifth'               => 'widget_layout.form.layout.choice.fifth.label'
             )
         ));
         $builder->add('containerTag', 'choice', array(

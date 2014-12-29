@@ -1,0 +1,9 @@
+{
+    "require_all":
+    {
+        "stylesheets":
+        {
+            "head": "@VictoireWidgetLayoutBundle/Resources/style/layout-widget.less"
+        }
+    }
+}

@@ -58,6 +58,14 @@
         <source>widget_layout.form.layout.choice.fifth.label</source>
         <target>5 * 20%</target>
       </trans-unit>
+      <trans-unit resname="widget_layout.form.layout.choice.2575.label">
+        <source>widget_layout.form.layout.choice.2575.label</source>
+        <target>25% - 75%</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.layout.choice.7525.label">
+        <source>widget_layout.form.layout.choice.7525.label</source>
+        <target>75% - 25%</target>
+      </trans-unit>
       <trans-unit resname="widget_layout.form.containerTag.label">
         <source>widget_layout.form.containerTag.label</source>
         <target>Balise</target>

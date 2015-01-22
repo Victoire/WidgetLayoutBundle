@@ -34,58 +34,10 @@ class WidgetLayoutType extends WidgetType
                 'fifth'               => 'widget_layout.form.layout.choice.fifth.label',
                 '2575'                => 'widget_layout.form.layout.choice.2575.label',
                 '7525'                => 'widget_layout.form.layout.choice.7525.label',
-            )
-        ));
-        $builder->add('containerTag', 'choice', array(
-            'label' => 'widget_layout.form.containerTag.label',
-            'vic_help_block' => 'widget_layout.form.containerTag.help_block',
-            'choices' => array_combine(WidgetLayout::$tags, WidgetLayout::$tags)
-        ));
-        $builder->add('containerClass', null, array(
-            'label' => 'widget_layout.form.containerClass.label',
-            'required' => false
-        ));
-        $builder->add('containerWidth', null, array(
-            'label' => 'widget_layout.form.containerWidth.label',
-            'vic_help_block' => 'widget_layout.form.containerWidth.help_block',
-            'required' => false
-        ));
-        $builder->add('containerMargin', null, array(
-            'label' => 'widget_layout.form.containerMargin.label',
-            'vic_help_block' => 'widget_layout.form.containerMargin.help_block',
-            'required' => false
-        ));
-        $builder->add('containerPadding', null, array(
-            'label' => 'widget_layout.form.containerPadding.label',
-            'vic_help_block' => 'widget_layout.form.containerPadding.help_block',
-            'required' => false
-        ));
-        
-        //@todo make it dynamic from the global variable (same name) or twig bundle parameter
-        $victoire_twig_responsive = array(
-            'XS', 'SM', 'MD', 'LG'
-        );
-        foreach ($victoire_twig_responsive as $key) {
-            $builder->add('containerMargin'.$key, null, array(
-                'label' => 'widget_layout.form.containerMargin'.$key.'.label',
-                'vic_help_block' => 'widget_layout.form.containerMargin'.$key.'.help_block',
-                'required' => false
-            ));
-            $builder->add('containerPadding'.$key, null, array(
-                'label' => 'widget_layout.form.containerPadding'.$key.'.label',
-                'vic_help_block' => 'widget_layout.form.containerPadding'.$key.'.help_block',
-                'required' => false
-            ));
-        }
-
-        $builder->add('containerBackground', null, array(
-            'label' => 'widget_layout.form.containerBackground.label',
-            'vic_help_block' => 'widget_layout.form.containerBackground.help_block',
-            'required' => false
+            ),
         ));
 
         parent::buildForm($builder, $options);
-
     }
 
     /**
@@ -99,7 +51,7 @@ class WidgetLayoutType extends WidgetType
         $resolver->setDefaults(array(
             'data_class'         => 'Victoire\Widget\LayoutBundle\Entity\WidgetLayout',
             'widget'             => 'Layout',
-            'translation_domain' => 'victoire'
+            'translation_domain' => 'victoire',
         ));
     }
 

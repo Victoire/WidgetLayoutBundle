@@ -20,8 +20,8 @@ class WidgetLayoutType extends WidgetType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder->add('layout', 'choice', array(
-            'label' => 'widget_layout.form.layout.label',
-            'choices' => array(
+            'label'        => 'widget_layout.form.layout.label',
+            'choices'      => array(
                 'once'                => 'widget_layout.form.layout.choice.once.label',
                 'third'               => 'widget_layout.form.layout.choice.third.label',
                 'third12'             => 'widget_layout.form.layout.choice.third12.label',
@@ -35,7 +35,11 @@ class WidgetLayoutType extends WidgetType
                 '2575'                => 'widget_layout.form.layout.choice.2575.label',
                 '7525'                => 'widget_layout.form.layout.choice.7525.label',
             ),
-        ));
+        ))
+            ->add('hasContainer', null, array(
+                'label' => 'widget_layout.form.layout.hasContainer.label',
+                'vic_help_block' => 'widget_layout.form.layout.hasContainer.vic_help_block',
+            ));
 
         parent::buildForm($builder, $options);
     }

@@ -8,35 +8,19 @@
     <body>
       <trans-unit resname="widget.layout.new.action.label">
         <source>widget.layout.new.action.label</source>
-        <target state="new">Layout</target>
+        <target>Columns</target>
       </trans-unit>
       <trans-unit resname="modal.form.widget.type.layout.label">
         <source>modal.form.widget.type.layout.label</source>
-        <target state="new">Layout</target>
+        <target>Columns</target>
       </trans-unit>
-      <trans-unit resname="widget_layout.form.slotsArchitecture.label">
-        <source>widget_layout.form.slotsArchitecture.label</source>
-        <target state="new">slotsArchitecture</target>
-      </trans-unit>
-      <trans-unit resname="widget_layout.form.containerClass.label">
-        <source>widget_layout.form.containerClass.label</source>
-        <target state="new">containerClass</target>
-      </trans-unit>
-      <trans-unit resname="widget_layout.form.containerWidth.label">
-        <source>widget_layout.form.containerWidth.label</source>
-        <target state="new">containerWidth</target>
-      </trans-unit>
-      <trans-unit resname="widget_layout.form.containerMargin.label">
-        <source>widget_layout.form.containerMargin.label</source>
-        <target state="new">containerMargin</target>
-      </trans-unit>
-      <trans-unit resname="widget_layout.form.containerPadding.label">
-        <source>widget_layout.form.containerPadding.label</source>
-        <target state="new">containerPadding</target>
+      <trans-unit resname="widget_layout.form.layout.label">
+        <source>widget_layout.form.layout.label</source>
+        <target>Content Layout</target>
       </trans-unit>
       <trans-unit resname="widget_layout.form.layout.choice.once.label">
         <source>widget_layout.form.layout.choice.once.label</source>
-        <target>100%</target>
+        <target>1 column</target>
       </trans-unit>
       <trans-unit resname="widget_layout.form.layout.choice.third.label">
         <source>widget_layout.form.layout.choice.third.label</source>
@@ -81,6 +65,18 @@
       <trans-unit resname="widget_layout.form.layout.choice.7525.label">
         <source>widget_layout.form.layout.choice.7525.label</source>
         <target>75% - 25%</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.containerTag.label">
+        <source>widget_layout.form.containerTag.label</source>
+        <target>Tag</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.layout.hasContainer.label">
+        <source>widget_layout.form.layout.hasContainer.label</source>
+        <target>Has centered container ?</target>
+      </trans-unit>
+      <trans-unit resname="widget_layout.form.layout.hasContainer.vic_help_block">
+        <source>widget_layout.form.layout.hasContainer.vic_help_block</source>
+        <target><![CDATA[<i class="fa fa-question-circle"></i> Will add the container class to the container tag]]></target>
       </trans-unit>
     </body>
   </file>

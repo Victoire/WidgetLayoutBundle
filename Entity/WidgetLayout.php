@@ -20,6 +20,13 @@ class WidgetLayout extends Widget
     protected $layout;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="has_container", type="boolean", options={"default" = false})
+     */
+    protected $hasContainer = false;
+
+    /**
      * To String function
      * Used in render choices type (Especially in VictoireWidgetRenderBundle)
      *
@@ -51,5 +58,28 @@ class WidgetLayout extends Widget
     public function getLayout()
     {
         return $this->layout;
+    }
+
+    /**
+     * Get hasContainer
+     *
+     * @return string
+     */
+    public function getHasContainer()
+    {
+        return $this->hasContainer;
+    }
+
+    /**
+     * Set hasContainer
+     * @param string $hasContainer
+     *
+     * @return $this
+     */
+    public function setHasContainer($hasContainer)
+    {
+        $this->hasContainer = $hasContainer;
+
+        return $this;
     }
 }

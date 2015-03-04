@@ -1,7 +1,7 @@
 {% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
 
 {% block content %}
-    <div class="vic-layout vic-layout-{{ layout }}">
+    <div class="vic-layout vic-layout-{{ layout }}{% if hasContainer %} container{% endif %}">
         {% set availableWidgets = [] %}
         <div class="row">
             {% include 'VictoireWidgetLayoutBundle:Layout:_' ~ layout ~ '.html.twig' %}

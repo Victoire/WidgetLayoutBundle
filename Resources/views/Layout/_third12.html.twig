@@ -1,6 +1,6 @@
 <div class="col-md-4">
-    {{ cms_slot_widgets(widget.id ~ '_1', {'availableWidgets' : availableWidgets}) }}
+    {{ cms_slot_widgets(widget.childrenSlot ~ '_1', {'availableWidgets' : availableWidgets}) }}
 </div>
 <div class="col-md-8">
-    {{ cms_slot_widgets(widget.id ~ '_2', {'availableWidgets' : availableWidgets}) }}
+    {{ cms_slot_widgets(widget.childrenSlot ~ '_2', {'availableWidgets' : availableWidgets}) }}
 </div>

@@ -20,9 +20,28 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('victoire_widget_layout');
 
-        // Here you should define the parameters that are allowed to
-        // configure your bundle. See the documentation linked above for
-        // more information on that topic.
+        $rootNode
+
+            ->children()
+                ->variableNode('layouts')->defaultValue([
+                    '2575' => [3, 9],
+                    '7525' => [9, 3],
+                    'fifth' => ["5ths", "5ths", "5ths", "5ths", "5ths"],
+                    'half' => [6, 6],
+                    'halfquarterquarter' => [6, 3, 3],
+                    'once' => [12],
+                    'quarterhalfquarter' => [3, 6, 3],
+                    'quarterquarterhalf' => [3, 3, 6],
+                    'quarters' => [3, 3, 3, 3],
+                    'third' => [4, 4, 4],
+                    'third21' => [8, 4],
+                    'third12' => [4, 8],
+                ])->end()
+            ->end()
+
+
+
+        ->end();
 
         return $treeBuilder;
     }

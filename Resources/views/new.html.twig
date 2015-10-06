@@ -3,8 +3,32 @@
     <div id="picker-{{ form.mode.vars.data }}" class="vic-tab-pane vic-active">
         {{ form_start(form) }}
             <div class="vic-row">
+
                 <div class="vic-col-md-6">
-                    {{ form_row(form.layout) }}
+                    <ul class="vic-nav-group" id="vic-stylize-nav-group" style="margin-top: 5px;">
+                        {% for key, config in victoire_twig_responsive %}
+
+                            <li class="item">
+                                <a
+                                        href="#vic-widget-layout-{{ key }}"
+                                        role="tab"
+                                        data-toggle="vic-tab"
+                                        data-key="{{ key }}"
+                                        data-title="{{ config.min is defined ? "#{config.min}px" }}{{ config.min is defined and config.max is defined ? " - " }}{{ config.max is defined ? "#{config.max}px" }}"
+                                        >
+                                    {{ ('widget_layout.tab.containerMargin.' ~ key|upper ~ '.label' )|trans({}, 'victoire')|raw }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+
+                    <div class="vic-tab-content">
+                        {% for key, responsive_config in victoire_twig_responsive %}
+                            <div role="tabpanel" class="vic-tab-pane" id="vic-widget-layout-{{ key }}">
+                                {{ form_row(attribute(form, 'layout' ~ key|capitalize)) }}
+                            </div>
+                        {% endfor %}
+                    </div>
                 </div>
                 <div class="vic-col-md-6">
                     {{ form_row(form.hasContainer) }}

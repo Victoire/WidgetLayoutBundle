@@ -78,6 +78,26 @@
         <source>widget_layout.form.layout.hasContainer.vic_help_block</source>
         <target><![CDATA[<i class="fa fa-question-circle"></i> Will add the container class to the container tag]]></target>
       </trans-unit>
+        <trans-unit resname="widget_layout.form.layoutXs.label">
+            <source>widget_layout.form.layoutXs.label</source>
+            <target>Mobile</target>
+        </trans-unit>
+        <trans-unit resname="widget_layout.form.layoutSm.label">
+            <source>widget_layout.form.layoutSm.label</source>
+            <target>Tablet</target>
+        </trans-unit>
+        <trans-unit resname="widget_layout.form.layoutMd.label">
+            <source>widget_layout.form.layoutMd.label</source>
+            <target>Laptop</target>
+        </trans-unit>
+        <trans-unit resname="widget_layout.form.layoutLg.label">
+            <source>widget_layout.form.layoutLg.label</source>
+            <target>Desktop</target>
+        </trans-unit>
+        <trans-unit resname="widget_layout.form.layout.placeholder">
+            <source>widget_layout.form.layout.placeholder</source>
+            <target>Default</target>
+        </trans-unit>
     </body>
   </file>
 </xliff>

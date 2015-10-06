@@ -15,9 +15,27 @@ class WidgetLayout extends Widget
     /**
      * @var string
      *
-     * @ORM\Column(name="layout", type="string", length=255)
+     * @ORM\Column(name="layoutLg", type="string", length=25)
      */
-    protected $layout;
+    protected $layoutLg;
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="layoutMd", type="string", length=255)
+     */
+    protected $layoutMd;
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="layoutSm", type="string", length=25)
+     */
+    protected $layoutSm;
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="layoutXs", type="string", length=25)
+     */
+    protected $layoutXs;
 
     /**
      * @var string
@@ -35,29 +53,6 @@ class WidgetLayout extends Widget
     public function __toString()
     {
         return 'Layout #'.$this->id;
-    }
-
-    /**
-     * Set layout
-     * @param string $layout
-     *
-     * @return $this
-     */
-    public function setLayout($layout)
-    {
-        $this->layout = $layout;
-
-        return $this;
-    }
-
-    /**
-     * Get layout
-     *
-     * @return string
-     */
-    public function getLayout()
-    {
-        return $this->layout;
     }
 
     /**
@@ -82,4 +77,70 @@ class WidgetLayout extends Widget
 
         return $this;
     }
+
+    /**
+     * @return string
+     */
+    public function getLayoutXs()
+    {
+        return $this->layoutXs;
+    }
+
+    /**
+     * @param string $layoutXs
+     */
+    public function setLayoutXs($layoutXs)
+    {
+        $this->layoutXs = $layoutXs;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLayoutLg()
+    {
+        return $this->layoutLg;
+    }
+
+    /**
+     * @param string $layoutLg
+     */
+    public function setLayoutLg($layoutLg)
+    {
+        $this->layoutLg = $layoutLg;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLayoutMd()
+    {
+        return $this->layoutMd;
+    }
+
+    /**
+     * @param string $layoutMd
+     */
+    public function setLayoutMd($layoutMd)
+    {
+        $this->layoutMd = $layoutMd;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLayoutSm()
+    {
+        return $this->layoutSm;
+    }
+
+    /**
+     * @param string $layoutSm
+     */
+    public function setLayoutSm($layoutSm)
+    {
+        $this->layoutSm = $layoutSm;
+    }
+
+
 }

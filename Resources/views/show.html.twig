@@ -1,10 +1,21 @@
 {% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
 
 {% block content %}
-    <div class="vic-layout vic-layout-{{ layout }}{% if hasContainer %} container{% endif %}">
+    <div class="vic-layout{% if hasContainer %} container{% endif %}">
         {% set availableWidgets = [] %}
         <div class="row">
-            {% include 'VictoireWidgetLayoutBundle:Layout:_' ~ layout ~ '.html.twig' %}
+
+            {% for col in cols %}
+                {% set classes = [] %}
+                {% for device, size in col %}
+                    {% if size %}
+                        {% set classes = classes|merge(['col-'~device~'-'~size]) %}
+                    {% endif %}
+                {% endfor %}
+                <div class="{{ classes|join(' ') }}">
+                    {{ cms_slot_widgets(widget.childrenSlot ~ '_' ~ loop.index, {'availableWidgets' : availableWidgets}) }}
+                </div>
+            {% endfor %}
         </div>
     </div>
 {% endblock content %}

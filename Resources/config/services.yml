@@ -1,6 +1,10 @@
 services:
     victoire_core.widget_layout_content_resolver:
+        class: Victoire\Widget\LayoutBundle\Resolver\WidgetLayoutContentResolver
         parent: victoire_widget.base_widget_content_resolver
+        arguments:
+            - "%victoire_widget_layout.layouts%"
+            - "%victoire_twig.responsive%"
         tags:
             - { name: victoire_widget.widget_content_resolver, alias: Layout }
     #alias to the entity

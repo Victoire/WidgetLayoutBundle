@@ -3,6 +3,7 @@ namespace Victoire\Widget\LayoutBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Victoire\Bundle\WidgetBundle\Entity\Widget;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * WidgetLayout
@@ -15,25 +16,25 @@ class WidgetLayout extends Widget
     /**
      * @var string
      *
-     * @ORM\Column(name="layoutLg", type="string", length=25)
+     * @ORM\Column(name="layoutLg", type="string", length=25, nullable=true)
      */
     protected $layoutLg;
     /**
      * @var string
-     *
+     * @Assert\NotBlank()
      * @ORM\Column(name="layoutMd", type="string", length=255)
      */
     protected $layoutMd;
     /**
      * @var string
      *
-     * @ORM\Column(name="layoutSm", type="string", length=25)
+     * @ORM\Column(name="layoutSm", type="string", length=25, nullable=true)
      */
     protected $layoutSm;
     /**
      * @var string
      *
-     * @ORM\Column(name="layoutXs", type="string", length=25)
+     * @ORM\Column(name="layoutXs", type="string", length=25, nullable=true)
      */
     protected $layoutXs;
 

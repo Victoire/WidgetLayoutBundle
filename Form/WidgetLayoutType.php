@@ -32,6 +32,7 @@ class WidgetLayoutType extends WidgetType
             'fifth'               => 'widget_layout.form.layout.choice.fifth.label',
             '2575'                => 'widget_layout.form.layout.choice.2575.label',
             '7525'                => 'widget_layout.form.layout.choice.7525.label',
+            'sixth'                => 'widget_layout.form.layout.choice.sixth.label',
         );
         $builder->add('layoutXs', 'choice', array(
             'label'        => 'widget_layout.form.layoutXs.label',
@@ -48,7 +49,7 @@ class WidgetLayoutType extends WidgetType
         ->add('layoutMd', 'choice', array(
             'label'        => 'widget_layout.form.layoutMd.label',
             'choices'      => $choices,
-            'required' => false,
+            'required' => true,
             'placeholder' => 'widget_layout.form.layout.placeholder',
         ))
         ->add('layoutLg', 'choice', array(

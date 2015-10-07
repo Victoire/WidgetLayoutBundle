@@ -8,9 +8,8 @@
                     <ul class="vic-nav-group" id="vic-stylize-nav-group" style="margin-top: 5px;">
                         {% for key, config in victoire_twig_responsive %}
 
-                            <li class="item">
-                                <a
-                                        href="#vic-widget-layout-{{ key }}"
+                            <li class="item {{ key == 'md' ? ' vic-active' }}">
+                                <a href="#vic-widget-layout-{{ key }}"
                                         role="tab"
                                         data-toggle="vic-tab"
                                         data-key="{{ key }}"
@@ -24,7 +23,7 @@
 
                     <div class="vic-tab-content">
                         {% for key, responsive_config in victoire_twig_responsive %}
-                            <div role="tabpanel" class="vic-tab-pane" id="vic-widget-layout-{{ key }}">
+                            <div role="tabpanel" class="vic-tab-pane {{ key == 'md' ? ' vic-active' }}" id="vic-widget-layout-{{ key }}">
                                 {{ form_row(attribute(form, 'layout' ~ key|capitalize)) }}
                             </div>
                         {% endfor %}

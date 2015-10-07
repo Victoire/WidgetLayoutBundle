@@ -36,6 +36,7 @@ class Configuration implements ConfigurationInterface
                     'third' => [4, 4, 4],
                     'third21' => [8, 4],
                     'third12' => [4, 8],
+                    'sixth' => [2, 2, 2, 2, 2, 2],
                 ])->end()
             ->end()
 

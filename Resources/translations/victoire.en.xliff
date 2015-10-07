@@ -98,6 +98,10 @@
             <source>widget_layout.form.layout.placeholder</source>
             <target>Default</target>
         </trans-unit>
+        <trans-unit resname="widget_layout.form.layout.choice.sixth.label">
+            <source>widget_layout.form.layout.choice.sixth.label</source>
+            <target>6 columns</target>
+        </trans-unit>
     </body>
   </file>
 </xliff>

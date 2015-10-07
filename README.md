@@ -1,10 +1,19 @@
-Victoire CMS Layout Bundle
+Victoire DCMS Layout Bundle
 ============
 
-Need to add a layout in a victoire cms website ?
-Get this layout bundle and so on
+What is the purpose of this bundle
+------------
 
-First you need to have a valid Symfony2 Victoire edition.
+This bundles gives you access to the *Columns Widget*.
+
+This widget set up the layout of your pages in order to create from 1 to 6 colums on the same level.
+Each column can holds any kind of widget.
+
+Install the bundle
+-----------------
+
+First you need to have a valid Symfony2 [Victoire](http://www.github.com/victoire/victoire) edition.
+
 Then you just have to run the following composer command :
 
     php composer.phar require friendsofvictoire/layout-widget

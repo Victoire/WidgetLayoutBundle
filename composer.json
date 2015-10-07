@@ -2,17 +2,17 @@
     "name": "friendsofvictoire/layout-widget",
     "type": "symfony-bundle",
     "description": "Victoire DCMS Layout widget",
-    "keywords": ["cms", "victoire", "Layout", "widget", "dcms"],
-    "homepage": "http://appventus.com",
+    "keywords": ["DCMS", "Victoire", "widget", "FriendsofVictoire", "Dynamic", "CMS", "Layout",],
+    "homepage": "http://victoire.io",
     "license": "MIT",
     "authors": [
         {
             "name": "Leny Bernard",
-            "email": "leny@appventus.com"
+            "email": "leny@victoire.io"
         },
         {
             "name": "Paul Andrieux",
-            "email": "paul@appventus.com"
+            "email": "paul@victoire.io"
         }
     ],
     "require": {

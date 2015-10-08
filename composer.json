@@ -2,7 +2,7 @@
     "name": "friendsofvictoire/layout-widget",
     "type": "symfony-bundle",
     "description": "Victoire DCMS Layout widget",
-    "keywords": ["DCMS", "Victoire", "widget", "FriendsofVictoire", "Dynamic", "CMS", "Layout",],
+    "keywords": ["DCMS", "Victoire", "widget", "FriendsofVictoire", "Dynamic", "CMS", "Layout"],
     "homepage": "http://victoire.io",
     "license": "MIT",
     "authors": [

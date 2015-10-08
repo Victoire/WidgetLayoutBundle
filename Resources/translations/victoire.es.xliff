@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
-  <file date="2013-11-27T18:15:06Z" source-language="en" target-language="fr" datatype="plaintext" original="not.available">
+  <file date="2013-11-27T18:15:06Z" source-language="en" target-language="es" datatype="plaintext" original="not.available">
     <header>
       <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
@@ -8,19 +8,19 @@
     <body>
       <trans-unit resname="widget.layout.new.action.label">
         <source>widget.layout.new.action.label</source>
-        <target>Colonnes</target>
+        <target>Columnas</target>
       </trans-unit>
       <trans-unit resname="modal.form.widget.type.layout.label">
         <source>modal.form.widget.type.layout.label</source>
-        <target>Colonnes</target>
+        <target>Columnas</target>
       </trans-unit>
       <trans-unit resname="widget_layout.form.layout.label">
         <source>widget_layout.form.layout.label</source>
-        <target>Architecture du contenu</target>
+        <target>Diseño del contenedor</target>
       </trans-unit>
       <trans-unit resname="widget_layout.form.layout.choice.once.label">
         <source>widget_layout.form.layout.choice.once.label</source>
-        <target>1 colonne</target>
+        <target>1 columna</target>
       </trans-unit>
       <trans-unit resname="widget_layout.form.layout.choice.third.label">
         <source>widget_layout.form.layout.choice.third.label</source>
@@ -68,40 +68,40 @@
       </trans-unit>
       <trans-unit resname="widget_layout.form.containerTag.label">
         <source>widget_layout.form.containerTag.label</source>
-        <target>Balise</target>
+        <target>Etiqueta</target>
       </trans-unit>
       <trans-unit resname="widget_layout.form.layout.hasContainer.label">
         <source>widget_layout.form.layout.hasContainer.label</source>
-        <target>Conteneur centré ?</target>
+        <target>¿ Centre el contenedor ?</target>
       </trans-unit>
       <trans-unit resname="widget_layout.form.layout.hasContainer.vic_help_block">
         <source>widget_layout.form.layout.hasContainer.vic_help_block</source>
-        <target><![CDATA[<i class="fa fa-question-circle"></i> Ajoutera la classe container à la balise]]></target>
+        <target><![CDATA[<i class="fa fa-question-circle"></i> Agregará la clase de contenedor a la etiqueta]]></target>
       </trans-unit>
-      <trans-unit resname="widget_layout.form.layoutXs.label">
-        <source>widget_layout.form.layoutXs.label</source>
-        <target>Mobile</target>
-      </trans-unit>
-      <trans-unit resname="widget_layout.form.layoutSm.label">
-        <source>widget_layout.form.layoutSm.label</source>
-        <target>Tablette</target>
-      </trans-unit>
-      <trans-unit resname="widget_layout.form.layoutMd.label">
-        <source>widget_layout.form.layoutMd.label</source>
-        <target>Laptop</target>
-      </trans-unit>
-      <trans-unit resname="widget_layout.form.layoutLg.label">
-        <source>widget_layout.form.layoutLg.label</source>
-        <target>Desktop</target>
-      </trans-unit>
-      <trans-unit resname="widget_layout.form.layout.placeholder">
-        <source>widget_layout.form.layout.placeholder</source>
-        <target>Defaut</target>
-      </trans-unit>
-      <trans-unit resname="widget_layout.form.layout.choice.sixth.label">
-          <source>widget_layout.form.layout.choice.sixth.label</source>
-          <target>6 colonnes</target>
-      </trans-unit>
+        <trans-unit resname="widget_layout.form.layoutXs.label">
+            <source>widget_layout.form.layoutXs.label</source>
+            <target>Smartphone</target>
+        </trans-unit>
+        <trans-unit resname="widget_layout.form.layoutSm.label">
+            <source>widget_layout.form.layoutSm.label</source>
+            <target>Tablet</target>
+        </trans-unit>
+        <trans-unit resname="widget_layout.form.layoutMd.label">
+            <source>widget_layout.form.layoutMd.label</source>
+            <target>Laptop</target>
+        </trans-unit>
+        <trans-unit resname="widget_layout.form.layoutLg.label">
+            <source>widget_layout.form.layoutLg.label</source>
+            <target>Desktop</target>
+        </trans-unit>
+        <trans-unit resname="widget_layout.form.layout.placeholder">
+            <source>widget_layout.form.layout.placeholder</source>
+            <target>Predeterminado</target>
+        </trans-unit>
+        <trans-unit resname="widget_layout.form.layout.choice.sixth.label">
+            <source>widget_layout.form.layout.choice.sixth.label</source>
+            <target>6 columnas</target>
+        </trans-unit>
     </body>
   </file>
 </xliff>

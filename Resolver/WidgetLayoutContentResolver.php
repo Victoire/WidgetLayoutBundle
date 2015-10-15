@@ -1,15 +1,9 @@
 <?php
+
 namespace Victoire\Widget\LayoutBundle\Resolver;
 
-use Doctrine\ORM\QueryBuilder;
-use Symfony\Component\HttpFoundation\RequestStack;
-use Victoire\Bundle\QueryBundle\Helper\QueryHelper;
 use Victoire\Bundle\WidgetBundle\Model\Widget;
 use Victoire\Bundle\WidgetBundle\Resolver\BaseWidgetContentResolver;
-use Victoire\Bundle\FilterBundle\Filter\Chain\FilterChain;
-use Pagerfanta\Adapter\DoctrineORMAdapter;
-use Pagerfanta\Pagerfanta;
-use Victoire\Widget\ListingBundle\Entity\WidgetListing;
 
 class WidgetLayoutContentResolver extends BaseWidgetContentResolver
 {
@@ -20,6 +14,7 @@ class WidgetLayoutContentResolver extends BaseWidgetContentResolver
         $this->layoutConfig = $layoutConfig;
         $this->responsiveConf = $responsiveConf;
     }
+
     public function getWidgetStaticContent(Widget $widget)
     {
         $parameters = parent::getWidgetStaticContent($widget);
@@ -39,7 +34,7 @@ class WidgetLayoutContentResolver extends BaseWidgetContentResolver
             foreach ($layouts as $device => $cols) {
                 if ($cols === null) {
                     $computedCols[$colNb][$device] = null;
-                } else if (array_key_exists($colNb - 1, $cols)) {
+                } elseif (array_key_exists($colNb - 1, $cols)) {
                     $computedCols[$colNb][$device] = $cols[$colNb - 1];
                 } else {
                     $computedCols[$colNb][$device] = $cols[($colNb - 1) % count($cols)];
@@ -51,6 +46,4 @@ class WidgetLayoutContentResolver extends BaseWidgetContentResolver
 
         return $parameters;
     }
-
-
 }

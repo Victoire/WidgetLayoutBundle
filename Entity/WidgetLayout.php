@@ -1,12 +1,13 @@
 <?php
+
 namespace Victoire\Widget\LayoutBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Victoire\Bundle\WidgetBundle\Entity\Widget;
 use Symfony\Component\Validator\Constraints as Assert;
+use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
 /**
- * WidgetLayout
+ * WidgetLayout.
  *
  * @ORM\Table("vic_widget_layout")
  * @ORM\Entity
@@ -47,9 +48,9 @@ class WidgetLayout extends Widget
 
     /**
      * To String function
-     * Used in render choices type (Especially in VictoireWidgetRenderBundle)
+     * Used in render choices type (Especially in VictoireWidgetRenderBundle).
      *
-     * @return String
+     * @return string
      */
     public function __toString()
     {
@@ -57,7 +58,7 @@ class WidgetLayout extends Widget
     }
 
     /**
-     * Get hasContainer
+     * Get hasContainer.
      *
      * @return string
      */
@@ -67,7 +68,8 @@ class WidgetLayout extends Widget
     }
 
     /**
-     * Set hasContainer
+     * Set hasContainer.
+     *
      * @param string $hasContainer
      *
      * @return $this
@@ -142,6 +144,4 @@ class WidgetLayout extends Widget
     {
         $this->layoutSm = $layoutSm;
     }
-
-
 }

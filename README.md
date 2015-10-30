@@ -1,4 +1,4 @@
-Victoire DCMS Layout Bundle
+#Victoire DCMS Layout Bundle
 ============
 
 ##What is the purpose of this bundle
@@ -18,7 +18,7 @@ Run the following composer command :
 
     php composer.phar require friendsofvictoire/layout-widget
 
-###Reminder
+##Reminder
 
 Do not forget to add the bundle in your AppKernel !
 

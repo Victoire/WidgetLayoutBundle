@@ -1,28 +1,43 @@
 {
-    "name": "friendsofvictoire/layout-widget",
-    "type": "symfony-bundle",
-    "description": "Victoire DCMS Layout widget",
-    "keywords": ["DCMS", "Victoire", "widget", "FriendsofVictoire", "Dynamic", "CMS", "Layout"],
-    "homepage": "http://victoire.io",
-    "license": "MIT",
-    "authors": [
+    "name"             : "friendsofvictoire/layout-widget",
+    "type"             : "symfony-bundle",
+    "description"      : "Victoire DCMS Layout widget",
+    "keywords"         : [
+        "DCMS",
+        "Victoire",
+        "widget",
+        "FriendsofVictoire",
+        "Dynamic",
+        "CMS",
+        "Layout"
+    ],
+    "homepage"         : "http://victoire.io",
+    "license"          : "MIT",
+    "authors"          : [
         {
-            "name": "Leny Bernard",
+            "name" : "Leny Bernard",
             "email": "leny@victoire.io"
         },
         {
-            "name": "Paul Andrieux",
+            "name" : "Paul Andrieux",
             "email": "paul@victoire.io"
         }
     ],
-    "require": {
-        "php"                      : ">=5.3.3",
-        "symfony/framework-bundle" : "~2.3",
-        "victoire/victoire"        : "~1.3.0"
+    "require"          : {
+        "php"                     : ">=5.3.3",
+        "symfony/framework-bundle": "~2.3",
+        "victoire/victoire"       : "~1.3.0"
     },
-    "autoload": {
-        "psr-0": { "Victoire\\Widget\\LayoutBundle": "" }
+    "autoload"         : {
+        "psr-0": {
+            "Victoire\\Widget\\LayoutBundle": ""
+        }
     },
     "minimum-stability": "dev",
-    "target-dir": "Victoire/Widget/LayoutBundle"
+    "target-dir"       : "Victoire/Widget/LayoutBundle",
+    "extra"            : {
+        "branch-alias": {
+            "dev-master": "1.3.x-dev"
+        }
+    }
 }

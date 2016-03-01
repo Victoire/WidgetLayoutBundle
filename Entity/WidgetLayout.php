@@ -5,6 +5,7 @@ namespace Victoire\Widget\LayoutBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 use Victoire\Bundle\WidgetBundle\Entity\Widget;
+use Victoire\Bundle\WidgetBundle\Entity\WidgetSlotInterface;
 
 /**
  * WidgetLayout.
@@ -12,7 +13,7 @@ use Victoire\Bundle\WidgetBundle\Entity\Widget;
  * @ORM\Table("vic_widget_layout")
  * @ORM\Entity
  */
-class WidgetLayout extends Widget
+class WidgetLayout extends Widget implements WidgetSlotInterface
 {
     /**
      * @var string

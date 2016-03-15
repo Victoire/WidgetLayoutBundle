@@ -3,6 +3,7 @@ victoire_core:
         Layout:
             class: "Victoire\\Widget\\LayoutBundle\\Entity\\WidgetLayout"
             name: Layout
+            cache: false
             
 jms_translation:
     configs:

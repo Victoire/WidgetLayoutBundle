@@ -37,32 +37,32 @@ class WidgetLayoutType extends WidgetType
             'widget_layout.form.layout.choice.sixth.label'              => 'sixth',
         ];
         $builder->add('layoutXs', ChoiceType::class, [
-            'label'        => 'widget_layout.form.layoutXs.label',
-            'choices'      => $choices,
+            'label'             => 'widget_layout.form.layoutXs.label',
+            'choices'           => $choices,
             'choices_as_values' => true,
-            'required'     => false,
-            'placeholder'  => 'widget_layout.form.layout.placeholder',
+            'required'          => false,
+            'placeholder'       => 'widget_layout.form.layout.placeholder',
         ])
         ->add('layoutSm', ChoiceType::class, [
-            'label'        => 'widget_layout.form.layoutSm.label',
-            'choices'      => $choices,
+            'label'             => 'widget_layout.form.layoutSm.label',
+            'choices'           => $choices,
             'choices_as_values' => true,
-            'required'     => false,
-            'placeholder'  => 'widget_layout.form.layout.placeholder',
+            'required'          => false,
+            'placeholder'       => 'widget_layout.form.layout.placeholder',
         ])
         ->add('layoutMd', ChoiceType::class, [
-            'label'        => 'widget_layout.form.layoutMd.label',
-            'choices'      => $choices,
+            'label'             => 'widget_layout.form.layoutMd.label',
+            'choices'           => $choices,
             'choices_as_values' => true,
-            'required'     => true,
-            'placeholder'  => 'widget_layout.form.layout.placeholder',
+            'required'          => true,
+            'placeholder'       => 'widget_layout.form.layout.placeholder',
         ])
         ->add('layoutLg', ChoiceType::class, [
-            'label'        => 'widget_layout.form.layoutLg.label',
-            'choices'      => $choices,
+            'label'             => 'widget_layout.form.layoutLg.label',
+            'choices'           => $choices,
             'choices_as_values' => true,
-            'required'     => false,
-            'placeholder'  => 'widget_layout.form.layout.placeholder',
+            'required'          => false,
+            'placeholder'       => 'widget_layout.form.layout.placeholder',
         ])
             ->add('hasContainer', null, [
                 'label'          => 'widget_layout.form.layout.hasContainer.label',

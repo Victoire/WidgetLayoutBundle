@@ -25,7 +25,7 @@ class WidgetLayoutContentResolver extends BaseWidgetContentResolver
             $layouts[$size] = @$this->layoutConfig[$parameters['layout'.ucfirst($size)]] ?: null;
         }
         $colMax = array_reduce($layouts, function ($carry, $item) {
-            return max(count($item), $carry);
+            return max(is_array($item) ? count($item) : 0, $carry);
         });
 
         $computedCols = [];
